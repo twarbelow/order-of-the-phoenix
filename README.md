@@ -17,5 +17,5 @@ Rails 5.1.7
 - Clone this repo
 - `bundle install`
 - `bundle exec figaro install`
-- `rails db:{create,migrate}``
+- `rails db:{create,migrate}`
 - `rails s`
