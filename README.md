@@ -10,7 +10,7 @@ The Order Of The Phoenix was a secret society founded by Albus Dumbledore to opp
 
 Ruby 2.5.3
 
-Rails 5.1.7
+Rails 5.2.4.3
 
 ### Setup
 
