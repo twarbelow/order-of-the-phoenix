@@ -1,5 +1,7 @@
 class SearchController < ActionController::Base
   def index
-    @results = HarryPotterService.new.search(params[:query]).map { |member| Member.new(member) } if params[:query].present?
+    if params[:house] == "Gryffindor"
+      @results = HarryPotterService.new.search_gryffindor.map { |member| Member.new(member) } if params[:query].present?
+    end
   end
 end
