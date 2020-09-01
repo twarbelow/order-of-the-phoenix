@@ -7,6 +7,7 @@ RSpec.describe 'as a user, I can look select a house' do
       select 'Gryffindor'
     end
     click_button "Search For Members"
+    save_and_open_page
     expect(current_path).to eq('/search')
     expect(page).to have_content("Order of the Phoenix Members in Gryffindor: 21")
     expect(page).to have_content("Details of Gryffindor Members:")
