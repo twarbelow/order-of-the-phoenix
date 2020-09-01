@@ -3,9 +3,13 @@
     <% @results.each do |member| %>
       <div class="member">
         <p>Name: <%= member.name %></p>
-        <p>Role: <%= member.role %></p>
+        <% if member.role != nil %>
+          <p>Role: <%= member.role %></p>
+        <% end %>
         <p>House: <%= member.house %></p>
-        <p>Patronus: <%= member.patronus %></p>
+        <% if member.patronus != nil %>
+          <p>Patronus: <%= member.patronus %></p>
+        <% end %>
         <br>
       </div>
     <% end %>

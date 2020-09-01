@@ -11,9 +11,6 @@ class HarryPotterService
   def conn
     @conn ||= Faraday.new(
       url: 'https://www.potterapi.com/v1/',
-      # params: {
-      #   api_key: ENV['HARRY_POTTER_KEY']
-      # },
       headers: {
         'Content-Type' => 'application/json'
       }
