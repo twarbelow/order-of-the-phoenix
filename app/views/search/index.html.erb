@@ -1,0 +1,13 @@
+<section class="details">
+  <ul>
+    <% @results.each do |member| %>
+      <div class="member">
+        <p>Name: <%= member.name %></p>
+        <p>Role: <%= member.role %></p>
+        <p>House: <%= member.house %></p>
+        <p>Patronus: <%= member.patronus %></p>
+        <br>
+      </div>
+    <% end %>
+  </ul>
+</section>
