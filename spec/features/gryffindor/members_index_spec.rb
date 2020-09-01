@@ -12,11 +12,9 @@ RSpec.describe 'as a user, I can look select a house' do
     expect(page).to have_content("Details of Gryffindor Members:")
     within('.details') do
       expect(page).to have_css(".member", count: 21)
-      within('.member') do
+      within('.member', match: :first) do
         expect(page).to have_css('.name')
-        expect(page).to have_css('.role')
         expect(page).to have_css('.house')
-        expect(page).to have_css('.patronus')
       end
     end
   end

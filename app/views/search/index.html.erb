@@ -1,14 +1,24 @@
+<h2>Order of the Phoenix Members in <%= @results.first.house%>: <%= @results.size %></h2>
 <section class="details">
   <ul>
+    <h3>Details of <%= @results.first.house%> Members:</h3>
     <% @results.each do |member| %>
       <div class="member">
-        <p>Name: <%= member.name %></p>
+        <p class='name'>
+          Name: <%= member.name %>
+        </p>
         <% if member.role != nil %>
-          <p>Role: <%= member.role %></p>
+          <p class='role'>
+            Role: <%= member.role %>
+          </p>
         <% end %>
-        <p>House: <%= member.house %></p>
+        <p class='house'>
+          House: <%= member.house %>
+        </p>
         <% if member.patronus != nil %>
-          <p>Patronus: <%= member.patronus %></p>
+          <p class='patronus'>
+            Patronus: <%= member.patronus %>
+          </p>
         <% end %>
         <br>
       </div>
